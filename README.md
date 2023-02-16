@@ -51,11 +51,12 @@ pytest
 ```
 
 ## Design concern
-As the given assignment pertains to monetery transactions, I thought it's highly likely that there must be a demand<br>
-for event-sourcing in the future.<br>
-Therefore, model design adopted was the '*event-sourced model*', so it's versioned, domain event-triggering.<br>
-On top of that, outbox pattern was briefly introduced so the system can reliably notify other services of what happend.<br>
-The operational processing in service_layer was put in one transaction with due regard to ACID.<br>
+As the given assignment pertains to monetery transactions,<br><br>
+I thought it's highly likely that there must be a demand for event-sourcing in the future.<br><br>
+Therefore, model design adopted was the *event-sourced model*, so it's versioned, domain event-triggering.<br><br>
+On top of that, outbox pattern was briefly introduced for the system to be able to reliably<br><br>
+notify other services of what happend.<br><br>
+The operational processing in service_layer was put in one transaction with due regard to ACID.<br><br>
 
 
 
